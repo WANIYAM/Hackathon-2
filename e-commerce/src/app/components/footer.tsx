@@ -1,144 +1,373 @@
+import Link from "next/link";
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
-import { RiFacebookBoxFill } from "react-icons/ri";
-import { FaInstagram } from "react-icons/fa";
-import { PiSkypeLogoFill } from "react-icons/pi";
-import { FaTwitter } from "react-icons/fa";
-import { FaPinterest } from "react-icons/fa";
-
-
-
-
-
+import {
+  FaLinkedin,
+  FaInstagram,
+  FaFacebookSquare,
+  FaTwitter,
+  FaPinterest,
+} from "react-icons/fa";
+import { IoLogoSkype } from "react-icons/io";
 
 const Footer = () => {
   return (
-<footer className="text-white bg-custom  body-font">
-  <div className="container px-5 py-24 mx-auto">
-    <div className="flex flex-wrap md:text-left text-center order-first">
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-bold text-white bg-custom  tracking-widest text-sm mb-3">
-          Menu
-        </h2>
-        <nav className="list-none mb-10">
+    <div className="bg-[#2A254B] text-gray-400 px-6 md:px-12 py-8 mt-8">
+      {/* Footer Content */}
+      <div className="flex flex-wrap justify-between">
+        {/* Menu Section */}
+        <div className="w-full sm:w-auto mb-6">
+        <h1 
+  className="text-white mb-4" 
+  style={{
+    fontFamily: 'Clash Display',
+    fontSize: '16px',
+    fontWeight: '400',
+    lineHeight: '19.68px',
+    textAlign: 'left',
+    // textDecoration: 'underline',
+    textDecorationSkipInk: 'none'
+  }}
+>
+  Menu
+</h1>
+          <ul className="space-y-2 text-white mb-4">
           <li>
-            <a className="text-white bg-custom  hover:text-gray-800">New arrivals</a>
-          </li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    New arrivals
+  </Link>
+</li>
           <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Best sellers</a>
-          </li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Best sellers
+  </Link>
+</li>
           <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Recently viewed</a>
-          </li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Recently viewed
+  </Link>
+</li>
           <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Popular this week</a>
-          </li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Popular this week
+  </Link>
+</li>
           <li>
-            <a className="text-white bg-custom  hover:text-gray-800">All product</a>
-          </li>
-        </nav>
-      </div>
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-bold  text-white tracking-widest text-sm mb-3">
-          Categories
-        </h2>
-        <nav className="list-none mb-10">
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Crockery</a>
-          </li>
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Furniture</a>
-          </li>
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Homeware</a>
-          </li>
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Plant pots</a>
-          </li>
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Chairs</a>
-          </li>
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Crockery</a>
-          </li>
-        </nav>
-      </div>
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-bold text-white tracking-widest text-sm mb-3">
-          Our company
-        </h2>
-        <nav className="list-none mb-10">
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">About us</a>
-          </li>
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Vacancies</a>
-          </li>
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Contact us</a>
-          </li>
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Privacy</a>
-          </li>
-          <li>
-            <a className="text-white bg-custom  hover:text-gray-800">Returns policy</a>
-          </li>
-        </nav>
-      </div>
-      <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-bold text-white tracking-widest text-sm mb-3">
-          Join our mailing list 
-        </h2>
-        <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
-          <div className="relative w-60 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    All products
+  </Link>
+</li>
             
+          </ul>
+        </div>
+
+        {/* Categories Section */}
+        <div className="w-full sm:w-auto mb-6">
+        <h1 
+  className="text-white mb-4" 
+  style={{
+    fontFamily: 'Clash Display',
+    fontSize: '16px',
+    fontWeight: '400',
+    lineHeight: '19.68px',
+    textAlign: 'left',
+    // textDecoration: 'underline',
+    textDecorationSkipInk: 'none'
+  }}
+>
+  Categories
+</h1>
+          <ul className="space-y-2 text-white mb-4">
+          <li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Crockery
+  </Link>
+</li>
+          <li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Furniture
+  </Link>
+</li>
+          <li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Homeware
+  </Link>
+</li>
+          <li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Plant pots
+  </Link>
+</li>
+          <li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Chairs
+  </Link>
+</li>
+            
+          </ul>
+        </div>
+
+        {/* Our Company Section */}
+        <div className="w-full sm:w-auto mb-6">
+        <h1 
+  className="text-white mb-4" 
+  style={{
+    fontFamily: 'Clash Display',
+    fontSize: '16px',
+    fontWeight: '400',
+    lineHeight: '19.68px',
+    textAlign: 'left',
+    // textDecoration: 'underline',
+    textDecorationSkipInk: 'none'
+  }}
+>
+ Our company 
+</h1>
+
+          <ul className="space-y-2 text-white mb-4">
+          <li>
+  <Link 
+    href="/about" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    About us
+  </Link>
+</li>
+          <li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Vacancies
+  </Link>
+</li>
+          <li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Contact us
+  </Link>
+</li>
+          <li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Privacy
+  </Link>
+</li>
+          <li>
+  <Link 
+    href="/" 
+    style={{
+      fontFamily: 'Satoshi',
+      fontSize: '14px',
+      fontWeight: '400',
+      lineHeight: '18.9px',
+      textAlign: 'left',
+      // textDecoration: 'underline', // This will apply the underline
+      textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+    }}
+  >
+    Return policy
+  </Link>
+</li>
+          </ul>
+        </div>
+
+        {/* Mailing List Section */}
+        <div className="w-full sm:w-auto">
+        <h1 
+  className="text-white mb-4" 
+  style={{
+    fontFamily: 'Clash Display',
+    fontSize: '16px',
+    fontWeight: '400',
+    lineHeight: '19.68px',
+    textAlign: 'left',
+    // textDecoration: 'underline', // This applies the underline
+    textDecorationSkipInk: 'none' // This may not be directly applicable in inline styles
+  }}
+>
+  Join our mailing list
+</h1>
+          <form className="flex flex-col sm:flex-row">
             <input
               type="email"
-              id="footer-field"
               placeholder="your@email.com"
-              name="footer-field"
-              className="w-full bg-gray-100 bg-opacity-50  border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-0 mx-4 leading-8 transition-colors duration-200 ease-in-out"
+              className="bg-[#403B5A] text-gray-300 placeholder-gray-500 p-3 rounded-md mb-4 sm:mb-0 sm:mr-4 flex-1 "
             />
-          </div>
-          <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-black   bg-white border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 ">
-            Sign up
-          </button>
+            <button
+              type="submit"
+              className="bg-white text-[#2A254B] font-bold px-6 py-3 rounded-md"
+            >
+              Sign up
+            </button>
+          </form>
         </div>
-        
+      </div>
+
+      {/* Divider */}
+      <hr className="my-8 border-t border-[#4E4D93]" />
+
+      {/* Footer Bottom Section */}
+      <div className="flex flex-wrap justify-between items-center">
+        {/* Copyright */}
+        <p className="text-gray-400">Copyright 2022 Avion LTD</p>
+
+        {/* Social Icons */}
+        <div className="flex gap-4 text-white">
+          <Link href="/"><FaLinkedin size={20} /></Link>
+          <Link href="/"><FaFacebookSquare size={20} /></Link>
+          <Link href="/"><FaInstagram size={20} /></Link>
+          <Link href="/"><IoLogoSkype size={20} /></Link>
+          <Link href="/"><FaTwitter size={20} /></Link>
+          <Link href="/"><FaPinterest size={20} /></Link>
+        </div>
       </div>
     </div>
-  </div>
-  <div className="bg-gray-100">
-    <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-      
-      <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
-        Copyright 2022 Avion LTD
-        
-      </p>
-      <span className="inline-flex gap-3 sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-    <a className="text-gray-500 text-2xl"> {/* Adjust the size as needed */}
-        <FaLinkedin />
-    </a>
-    <a className="text-gray-500 text-2xl">
-        <RiFacebookBoxFill />
-    </a>
-    <a className="text-gray-500 text-2xl">
-        <FaInstagram />
-    </a>
-    <a className="text-gray-500 text-2xl">
-        <PiSkypeLogoFill />
-    </a>
-    <a className="text-gray-500 text-2xl">
-        <FaTwitter />
-    </a>
-    <a className="text-gray-500 text-2xl">
-        <FaPinterest />
-    </a>
-</span>
-          </div>
-  </div>
-</footer>
-
   );
 };
 

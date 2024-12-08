@@ -1,19 +1,26 @@
-import React from 'react'
-import UpperHeader from './components/header/Header'
-import MainHeader from './components/header/MainHeader'
-import Footer from './components/Footer'
-import ShoppingCart from './components/CartItems'
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
-const Cart = () => {
+import Hero from "./components/hero";
+import Brand from "./components/brand";
+import Ceramics from "./components/ceramics";
+import Product from "./components/product";
+import Benefit from "./components/benefit";
+import Touch from "./components/touch";
+import ProductListing from "./productlisting/page";
+
+
+export default function Home() {
   return (
-    <div>
-      <UpperHeader/>
-      <MainHeader/>
-      <ShoppingCart/>
+   <>
+   <Hero />
+   <Brand />
+   <Ceramics />
+   <Product />
+   <Benefit />
+   <Touch />
+<ProductListing/>
+   
 
-      <Footer/>
-    </div>
-  )
+   </>
+  );
 }
-
-export default Cart
