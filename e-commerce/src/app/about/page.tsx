@@ -18,23 +18,23 @@ const About = () => {
 
       {/* Story Section */}
       <div className="flex flex-col md:flex-row w-full h-auto items-center justify-around px-4 py-16">
-        <div className="bg-custom-purple w-full md:w-2/5 text-white p-8 md:p-16 mb-8 md:mb-0">
-          <h1 className="text-xl md:text-2xl">It started with a small idea</h1>
-          <p className="mt-6">
-            A global brand with local beginnings, our story began in a small studio in South London in early 2014.
-          </p>
-          <button className="bg-input-bg h-12 w-40 rounded-sm mt-10 text-white">
-            View Collection
-          </button>
-        </div>
-        <div className="w-full md:w-2/5">
-          <img
-            src="/images/About main.png"
-            alt="About main"
-            className="w-full transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
-          />
-        </div>
-      </div>
+  <div className="bg-custom-purple w-full md:w-2/5 text-white p-8 md:p-16 mb-8 md:mb-0">
+    <h1 className="text-xl md:text-2xl">It started with a small idea</h1>
+    <p className="mt-6">
+      A global brand with local beginnings, our story began in a small studio in South London in early 2014.
+    </p>
+    <button className="bg-input-bg h-12 w-40 rounded-sm mt-10 text-white">
+      View Collection
+    </button>
+  </div>
+  <div className="w-1.5 md:w-2/5">
+    <img
+      src="/images/About main.png"
+      alt="About main"
+      className="w-full transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
+    />
+  </div>
+</div>
 
       {/* Service Section */}
       <div className="flex flex-col md:flex-row w-full h-auto items-center px-4 py-16 space-y-8 md:space-y-0">
@@ -98,23 +98,31 @@ const About = () => {
         </div>
       </div>
 
-      {/* Newsletter Section */}
-      <div className="w-full h-auto bg-gray-100 py-8">
-        <div className="m-auto w-11/12 bg-white p-8 md:p-16">
-          <h1 className="text-custom-purple text-2xl md:text-3xl text-center">Join the club and get the benefits</h1>
-          <p className="text-custom-purple text-center mt-6 text-sm md:text-base">
-            Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop-up stores, and more.
-          </p>
-          <div className="flex flex-col md:flex-row justify-center items-center mt-6 space-y-4 md:space-y-0">
-            <input
-              type="text"
-              placeholder="you@gmail.com"
-              className="bg-gray-100 w-80 h-12 p-5 rounded-sm"
-            />
-            <button className="bg-custom-purple h-12 w-32 rounded-sm text-white">Sign Up</button>
+      <section>
+        <div className='py-12 bg-[#F9F9F9] text-[#2A254B] mt-12'>
+          <div className='w-full max-w-[640px] md:max-w-[1340px] h-[350px] bg-white mx-auto flex justify-center items-center flex-col px-4'>
+            <h1 className='text-2xl md:text-4xl text-center'>
+              Join the club and get the benefits
+            </h1>
+            <h2 className='text-center py-4 text-sm md:text-base'>
+              Sign up for our newsletter and receive exclusive offers on new
+              <br /> ranges, sales, pop-up stores, and more.
+            </h2>
+            <div className='mt-4 w-full'>
+              <form action="" className='flex flex-col md:flex-row items-center justify-center'>
+                <input
+                  type="text"
+                  placeholder="your@email.com"
+                  className="p-4 bg-[#F9F9F9] w-full md:w-[354px] h-[56px] outline-none mb-4 md:mb-0"
+                />
+                <button className='p-2 bg-[#2A254B] text-white w-full md:w-[118px] h-[56px]'>
+                  Signup
+                </button>
+              </form>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

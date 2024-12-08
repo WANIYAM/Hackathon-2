@@ -37,13 +37,15 @@ const Navbar = () => {
 
         {/* Hamburger Menu for Mobile */}
         <div className="flex items-center gap-4 md:hidden">
-          <CiSearch size={25} className="text-[#2A254B]" />
+          {/* <CiSearch size={25} className="text-[#2A254B]" /> */}
           <button
-            className="text-2xl focus:outline-none z-30"
-            onClick={toggleMenu}
-          >
-            {!menuOpen ? <IoMenu /> : <IoClose />}
-          </button>
+  className="text-2xl focus:outline-none z-30"
+  onClick={toggleMenu}
+  aria-expanded={menuOpen}
+  aria-label="Toggle menu"
+>
+  {!menuOpen ? <IoMenu /> : <IoClose />}
+</button>
         </div>
       </div>
 
