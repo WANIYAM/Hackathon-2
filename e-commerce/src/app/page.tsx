@@ -1,17 +1,19 @@
 import React from 'react'
-import UpperHeader from './components/header'
-import Footer from './components/footer'
+import UpperHeader from './components/header/Header'
+import MainHeader from './components/header/MainHeader'
+import Footer from './components/Footer'
+import ShoppingCart from './components/CartItems'
 
-const Home = () => {
+const Cart = () => {
   return (
     <div>
-      {/* <UpperHeader/>
+      <UpperHeader/>
       <MainHeader/>
+      <ShoppingCart/>
+
       <Footer/>
-       */}
-      
     </div>
   )
 }
 
-export default Home
+export default Cart
