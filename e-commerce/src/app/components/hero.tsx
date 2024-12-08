@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-<link href="https://fonts.googleapis.com/css2?family=Satoshi:wght@400&display=swap" rel="stylesheet"></link>
 
 const Hero = () => {
   return (

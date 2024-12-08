@@ -1,90 +1,100 @@
 import React from "react";
-import Navbar from "../components/navbar";
 
 const Cart = () => {
   return (
-    <><Navbar /><div>
-      <div className="bg-gray-200 w-full px-4 sm:px-10 lg:px-40 pt-10 pb-16 h-auto text-custom-purple">
-        <h1 className="text-2xl sm:text-3xl text-center lg:text-left">
-          Your Shopping Cart
-        </h1>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 pt-10">
-          {/* Product Section */}
-          <div className="border-2 p-4">
-            <h1 className="text-lg font-semibold">Product</h1>
-            <div className="flex items-start justify-between mt-8">
-              <div className="flex">
+    <div className="bg-white w-full px-4 sm:px-10 lg:px-40 pt-10 pb-16 text-[#2A254B]">
+      {/* Title */}
+      <h1 className="text-2xl sm:text-3xl font-semibold text-center lg:text-left">
+        Your shopping cart
+      </h1>
+
+      {/* Cart Items Section */}
+      <div className="mt-8">
+        <table className="w-full text-left">
+          {/* Table Header */}
+          <thead>
+            <tr className="border-b text-sm sm:text-base">
+              <th className="py-4">Product</th>
+              <th className="py-4 text-center">Quantity</th>
+              <th className="py-4 text-right">Total</th>
+            </tr>
+          </thead>
+
+          {/* Table Body */}
+          <tbody>
+            {/* First Product */}
+            <tr className="border-b">
+              <td className="py-6 flex items-center">
                 <img
                   src="/images/Product Image.png"
-                  alt="Product 1"
-                  className="w-20 h-20 sm:w-28 sm:h-28 transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1" />
-                <div className="ml-6">
-                  <h1 className="text-base sm:text-lg font-medium">
+                  alt="Graystone Vase"
+                  className="w-20 h-20 sm:w-28 sm:h-28 mr-6 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105"
+                />
+                <div>
+                  <h2 className="text-base sm:text-lg font-medium">
                     Graystone vase
-                  </h1>
-                  <p className="text-sm mt-2">
+                  </h2>
+                  <p className="text-sm text-[#505977]">
                     A timeless ceramic vase with a tri-color grey glaze.
                   </p>
-                  <p className="mt-2 text-base font-semibold">£85</p>
+                  <p className="mt-2 text-lg font-semibold">£85</p>
                 </div>
-              </div>
-              {/* Quantity Section */}
-              <div className="flex flex-col items-center">
-                <h1 className="text-sm font-semibold sm:hidden lg:block">
-                  Quantity
-                </h1>
-                <p className="mt-2 text-lg font-medium">1</p>
-              </div>
-            </div>
-            <div className="flex items-start justify-between mt-8">
-              <div className="flex">
+              </td>
+              <td className="py-6 text-center">
+                <div className="flex items-center justify-center">
+                  <button className="px-2 text-lg">-</button>
+                  <span className="px-4">1</span>
+                  <button className="px-2 text-lg">+</button>
+                </div>
+              </td>
+              <td className="py-6 text-right text-lg font-medium">£85</td>
+            </tr>
+
+            {/* Second Product */}
+            <tr>
+              <td className="py-6 flex items-center">
                 <img
                   src="/images/Product Image 2.png"
-                  alt="Product 2"
-                  className="w-20 h-20 sm:w-28 sm:h-28 transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1" />
-                <div className="ml-6">
-                  <h1 className="text-base sm:text-lg font-medium">
+                  alt="Basic White Vase"
+                  className="w-20 h-20 sm:w-28 sm:h-28 mr-6 object-cover rounded-lg transition-transform duration-300 ease-in-out hover:scale-105"
+                />
+                <div>
+                  <h2 className="text-base sm:text-lg font-medium">
                     Basic white vase
-                  </h1>
-                  <p className="text-sm mt-2">
+                  </h2>
+                  <p className="text-sm text-[#505977]">
                     Beautiful and simple, this is one for the classics.
                   </p>
-                  <p className="mt-2 text-base font-semibold">£85</p>
+                  <p className="mt-2 text-lg font-semibold">£125</p>
                 </div>
-              </div>
-              {/* Quantity Section */}
-              <div className="flex flex-col items-center">
-                <h1 className="text-sm font-semibold sm:hidden lg:block">
-                  Quantity
-                </h1>
-                <p className="mt-2 text-lg font-medium">1</p>
-              </div>
-            </div>
-          </div>
+              </td>
+              <td className="py-6 text-center">
+                <div className="flex items-center justify-center">
+                  <button className="px-2 text-lg">-</button>
+                  <span className="px-4">1</span>
+                  <button className="px-2 text-lg">+</button>
+                </div>
+              </td>
+              <td className="py-6 text-right text-lg font-medium">£125</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-          {/* Total Section (Hidden on Small Screens) */}
-          <div className="border-2 p-4 sm:hidden lg:block">
-            <h1 className="text-lg font-semibold">Total</h1>
-            <p className="mt-10 text-lg font-medium">£85</p>
-            <p className="mt-40 text-lg font-medium">£85</p>
-          </div>
+      {/* Subtotal Section */}
+      <div className="mt-8 flex flex-col sm:flex-row justify-between items-center sm:items-end">
+        <div className="text-sm text-[#505977]">
+          {/* <p>Taxes and shipping are calculated at checkout</p> */}
         </div>
-
-        {/* Subtotal Section */}
-        <div className="mt-10 text-center lg:text-right">
-          <h1 className="inline text-lg sm:text-xl font-medium mr-4">
-            Subtotal
-          </h1>
-          <h1 className="inline text-xl sm:text-2xl font-semibold">£210</h1>
-          <p className="text-sm mt-4">
-            Taxes and shipping are calculated at checkout
-          </p>
-          <button className="bg-custom-purple h-12 sm:h-14 mt-6 w-full sm:w-56 rounded-sm text-white">
+        <div className="text-right mt-6 sm:mt-0">
+          <h2 className="text-lg sm:text-xl font-medium">Subtotal</h2>
+          <p className="text-xl sm:text-2xl font-semibold mt-2">£210</p>
+          <button className="bg-[#2A254B] text-white w-full sm:w-auto px-8 py-3 rounded-md mt-4">
             Go to checkout
           </button>
         </div>
       </div>
-    </div></>
+    </div>
   );
 };
 
