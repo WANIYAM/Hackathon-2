@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import NotificationBar from "../components/topnav";
-import Navbar from "../components/navbar";
 import AbNavbar from "../components/aboutNav";
 
 const About = () => {

@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/navigation';
-import NotificationBar from './topnav';
 
 const Product = () => {
   const router = useRouter();

@@ -5,7 +5,6 @@ import { IoIosCheckmarkCircleOutline } from "react-icons/io";
 import { LuSprout } from "react-icons/lu";
 import { MdOutlinePriceChange } from "react-icons/md";
 import NotificationBar from "../components/topnav";
-import Navbar from "../components/navbar";
 import Pnavbar from "../components/productnav";
 
 const ProductListing = () => {
