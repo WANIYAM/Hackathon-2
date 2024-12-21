@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { useRouter } from 'next/navigation';
+import NotificationBar from './topnav';
 
 const Product = () => {
   const router = useRouter();
@@ -11,6 +12,7 @@ const Product = () => {
   };
 
   return (
+
     <>
       <section>
         <div className='px-8 py-12 text-[#2A254B] mt-12'>

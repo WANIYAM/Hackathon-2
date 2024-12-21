@@ -1,9 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
+import NotificationBar from "../components/topnav";
+import Navbar from "../components/navbar";
+import AbNavbar from "../components/aboutNav";
 
 const About = () => {
   return (
-    <div>
+    <><NotificationBar />
+    <AbNavbar/><div>
       {/* Hero Section */}
       <div className="w-full h-auto flex flex-col md:flex-row justify-between items-center px-4 md:px-16 py-8">
         <div className="md:w-2/4 text-xl md:text-2xl text-center md:text-left text-custom-purple">
@@ -18,31 +22,29 @@ const About = () => {
 
       {/* Story Section */}
       <div className="flex flex-col md:flex-row w-full h-auto items-center justify-around px-4 py-16">
-  <div className="bg-custom-purple w-full md:w-2/5 text-white p-8 md:p-16 mb-8 md:mb-0">
-    <h1 className="text-xl md:text-2xl">It started with a small idea</h1>
-    <p className="mt-6">
-      A global brand with local beginnings, our story began in a small studio in South London in early 2014.
-    </p>
-    <button className="bg-input-bg h-12 w-40 rounded-sm mt-10 text-white">
-      View Collection
-    </button>
-  </div>
-  <div className="w-1.5 md:w-2/5">
-    <img
-      src="/images/About main.png"
-      alt="About main"
-      className="w-full transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
-    />
-  </div>
-</div>
+        <div className="bg-custom-purple w-full md:w-2/5 text-white p-8 md:p-16 mb-8 md:mb-0">
+          <h1 className="text-xl md:text-2xl">It started with a small idea</h1>
+          <p className="mt-6">
+            A global brand with local beginnings, our story began in a small studio in South London in early 2014.
+          </p>
+          <button className="bg-input-bg h-12 w-40 rounded-sm mt-10 text-white">
+            View Collection
+          </button>
+        </div>
+        <div className="w-1.5 md:w-2/5">
+          <img
+            src="/images/About main.png"
+            alt="About main"
+            className="w-full transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1" />
+        </div>
+      </div>
 
       {/* Service Section */}
       <div className="flex flex-col md:flex-row w-full h-auto items-center px-4 py-16 space-y-8 md:space-y-0">
         <img
           src="/images/About second.png"
           alt="Service"
-          className="w-full md:w-2/5 transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
-        />
+          className="w-full md:w-2/5 transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1" />
         <div className="border-2 bg-slate-200 w-full md:w-3/5 p-8 md:p-20">
           <h1 className="text-xl md:text-2xl text-custom-purple">
             Our service isn&lsquo;t just personal, it&lsquo;s actually hyper-personally exquisite
@@ -89,8 +91,7 @@ const About = () => {
               <img
                 src={item.img}
                 alt={item.title}
-                className="mx-auto transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1"
-              />
+                className="mx-auto transition-transform duration-300 ease-in-out hover:scale-105 hover:translate-y-1" />
               <h1 className="text-custom-purple text-lg mt-4">{item.title}</h1>
               <p className="text-custom-purple mt-4">{item.desc}</p>
             </div>
@@ -113,8 +114,7 @@ const About = () => {
                 <input
                   type="text"
                   placeholder="your@email.com"
-                  className="p-4 bg-[#F9F9F9] w-full md:w-[354px] h-[56px] outline-none mb-4 md:mb-0"
-                />
+                  className="p-4 bg-[#F9F9F9] w-full md:w-[354px] h-[56px] outline-none mb-4 md:mb-0" />
                 <button className='p-2 bg-[#2A254B] text-white w-full md:w-[118px] h-[56px]'>
                   Signup
                 </button>
@@ -123,7 +123,7 @@ const About = () => {
           </div>
         </div>
       </section>
-    </div>
+    </div></>
   );
 };
 
